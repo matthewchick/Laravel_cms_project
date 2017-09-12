@@ -4,13 +4,16 @@
  *  1. configure database configuration inside .env
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
- *     https://laravel.com/docs/5.2/authentication - Section 22
+ *     https://laravel.com/docs/5.2/authentication - Section 22 (Form Login)
  *     The file(s) that you're looking for are located in: App\Http\Middleware  folder.
  *     Name of the files: Authenticate.php  & RedirectIfAuthenticated.php
- *  4. Users table Migration
+ *  4. Users table Migration  - create php class and make a table - php artisan migrate => Section 8 (Laravel Migration)
  *     add role_id and isactive inside schema: user
- *     php artisan make:model Role -m
-
+ *     php artisan make:model Role -m Create a new Eloquent model class, -m mean migration
+ *     php artisan make:migration create_post_table --create="posts" => create a migration file
+	   php artisan migrate:rollback
+       add column to existing table => php artisan make:migration add_is_admin_col_to_posts_table --table=posts
+	5. php artisan make:seeder UsersTableSeeder => dumpy data User table (Section 39)
  */
 /*
 |--------------------------------------------------------------------------
