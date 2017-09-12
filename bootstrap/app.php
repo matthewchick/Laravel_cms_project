@@ -4,7 +4,13 @@
  *  1. configure database configuration inside .env
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
- *  4. ls
+ *     https://laravel.com/docs/5.2/authentication - Section 22
+ *     The file(s) that you're looking for are located in: App\Http\Middleware  folder.
+ *     Name of the files: Authenticate.php  & RedirectIfAuthenticated.php
+ *  4. Users table Migration
+ *     add role_id and isactive inside schema: user
+ *     php artisan make:model Role -m
+
  */
 /*
 |--------------------------------------------------------------------------
