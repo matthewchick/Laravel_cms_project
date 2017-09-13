@@ -17,6 +17,10 @@
 	5. php artisan make:seeder UsersTableSeeder => dumpy data User table (Section 39)
     6. relation setup and data entry => belongsTo  (Section 9 and 11)
     7. use Tinker to check the relation => php artisan tinker => $user = App\User::find(1);  (Section 12)
+    8. Create AdminUsersController => php artisan make:controller --resource AdminUsersController  (Section 5) Controller => resources means to
+       add all methods including store, index, destroy, edit, update and so on
+	   Route::get('/admin', 'AdminUsersController@index');   inside the route.php
+       Route::get('/admin/{id}', 'AdminUsersController@index');     => change index($id) inside the AdminUsersController
  */
 /*
 |--------------------------------------------------------------------------

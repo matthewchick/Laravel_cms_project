@@ -31,6 +31,9 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+// create a special route by using resource - php artisan list:route - list all resources routes
+// https://laravel.com/docs/5.2/controllers
+Route::resource('admin/users', 'AdminUsersController');
 
 /*
  * This route group applies the "web" middleware group to
