@@ -4,6 +4,7 @@
  *  1. configure database configuration inside .env
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
+ *     https://laravel.com/docs/5.2/routing - Section 5 (Route)  => route.php inside HTTP
  *     https://laravel.com/docs/5.2/authentication - Section 22 (Form Login)
  *     The file(s) that you're looking for are located in: App\Http\Middleware  folder.
  *     Name of the files: Authenticate.php  & RedirectIfAuthenticated.php
