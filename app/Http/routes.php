@@ -38,3 +38,23 @@ Route::get('/home', 'HomeController@index');
  * in your HTTP kernel and includes session state, CSRF protection
  * Route::group(['middleware' => ['web']], function () {  });
  */
+
+/* Perform CRUD operation - Section 9  RawSQL Queries
+// https://laravel.com/docs/5.2/database
+Route::get('insert', function() {
+	DB::insert('insert into roles(name) values(?)', ['Guest']);
+});
+
+Route::get('update', function() {
+	DB::update('update roles set name = 'Guest' where name = ?', ['Peter']);
+});
+
+Route::get('delete', function() {
+	DB::delete('delete from roles where name = ?', ['Peter']);
+});
+
+Route::get('select', function() {
+	$roles =DB::select('select * from roles where name = ?', ['Peter']);
+    return view ('Roles ". [$roles]);
+});
+*/

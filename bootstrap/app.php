@@ -15,7 +15,8 @@
 	   php artisan migrate:rollback
        add column to existing table => php artisan make:migration add_is_admin_col_to_posts_table --table=posts
 	5. php artisan make:seeder UsersTableSeeder => dumpy data User table (Section 39)
-    6. relation setup and data entry
+    6. relation setup and data entry => belongsTo  (Section 9 and 11)
+    7. use Tinker to check the relation => php artisan tinker => $user = App\User::find(1);  (Section 12)
  */
 /*
 |--------------------------------------------------------------------------
