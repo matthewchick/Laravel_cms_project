@@ -24,8 +24,11 @@
     9. php artisan route:list - list all routes
    10. install node.js and gulp by using npm i -g gulp  for laravel 5.2 but not for laravel 5.4 above
 	   php artisan --version
-
-
+       npm install laravel-elixir --save-dev
+   11. npm install
+       move font folder into the public
+       move js and css folder into the resources/assets
+       use the command, gulp to compact css and js files
  */
 /*
 |--------------------------------------------------------------------------
