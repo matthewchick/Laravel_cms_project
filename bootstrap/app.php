@@ -28,8 +28,13 @@
    11. npm install
        move font folder into the public
        move js and css folder into the resources/assets
-       use the command, gulp to compact css and js files
- */
+       use the command, gulp with laravel elixir to compact css and js files
+   12. Add admin.blade.php as a layout  Section 6 and 7 Views and Blade templating engine
+       https://laravel.com/docs/5.2/views   => In Symfony, use Twig,  => Laravel, use blade
+       pass data to view, use {{$id}} in html <= return view('post'->with('id',$id); or return view('post', compact(id)); Section 6 View
+       https://laravel.com/docs/5.2/blade
+	   @extends()
+*/
 /*
 |--------------------------------------------------------------------------
 | Create The Application
