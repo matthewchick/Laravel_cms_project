@@ -21,6 +21,9 @@
        add all methods including store, index, destroy, edit, update and so on
 	   Route::get('/admin', 'AdminUsersController@index');   inside the route.php
        Route::get('/admin/{id}', 'AdminUsersController@index');     => change index($id) inside the AdminUsersController
+    9. php artisan route:list - list all routes
+
+
  */
 /*
 |--------------------------------------------------------------------------

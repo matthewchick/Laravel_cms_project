@@ -15,7 +15,8 @@ class AdminUsersController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.users.index');
+        // see php artisan route:list - go to index.blade.php under resources/admin/users/
     }
 
     /**
