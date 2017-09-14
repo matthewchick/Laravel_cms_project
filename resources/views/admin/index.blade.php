@@ -1,7 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: jeremychik
- * Date: 12/9/2017
- * Time: 12:29 PM
- */
+@extends('layouts.admin')
+
+@section('content')
+<h1>Admin</h1>
+@endsection

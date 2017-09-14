@@ -31,6 +31,9 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/admin', function () {
+	return view('admin.index');   //admin means admin folder
+});
 // create a special route by using resource - php artisan list:route - list all resources routes
 // https://laravel.com/docs/5.2/controllers
 Route::resource('admin/users', 'AdminUsersController');
@@ -41,6 +44,7 @@ Route::resource('admin/users', 'AdminUsersController');
  * in your HTTP kernel and includes session state, CSRF protection
  * Route::group(['middleware' => ['web']], function () {  });
  */
+
 
 /* Perform CRUD operation - Section 9  RawSQL Queries
 // https://laravel.com/docs/5.2/database
