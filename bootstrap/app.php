@@ -22,6 +22,8 @@
 	   Route::get('/admin', 'AdminUsersController@index');   inside the route.php
        Route::get('/admin/{id}', 'AdminUsersController@index');     => change index($id) inside the AdminUsersController
     9. php artisan route:list - list all routes
+   10. install node.js and gulp by using npm i -g gulp  for laravel 5.2 but not for laravel 5.4 above
+	   php artisan --version
 
 
  */
