@@ -1,6 +1,6 @@
 <?php
 
-/*  Finish Section 1 - 9, 11, 12, 22, 26, 27*, 39*
+/*  Finish Section 1 - 9, 11, 12, 18, 22, 26, 27*, 39*
  *  1. configure database configuration inside .env  Section 1, 2 and 3
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
@@ -38,7 +38,15 @@
        @if..@endif, @while..@endwhile, @for..@endfor, @foreach..@endforeach
        @include()
    13. Display User - use diffForHuman()
-   14. Create page
+   14. Create page  - Section 18 HTML Form and validation - New -> edit template -> to generate blade template
+       create() -> store(Request $request) -> eloquent create() or save() -> save to DB inside the controller
+       use index() -> read data
+       use show($parameter) -> read data based on $parameter
+       use edit() and update()
+       use destroy()
+   15. Use and install laravel collective html => https://laravelcollective.com/docs/5.2/html
+	   composer require laravelcollective/html 5.2 => composer update
+
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
