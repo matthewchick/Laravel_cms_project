@@ -37,6 +37,7 @@
        @yield()
        @if..@endif, @while..@endwhile, @for..@endfor, @foreach..@endforeach
        @include()
+   13. Display User - use diffForHuman()
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
