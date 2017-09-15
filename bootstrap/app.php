@@ -49,10 +49,15 @@
 	   Add Collective\Html\HtmlServiceProvider::class, inside config/app.php
        Add 'Form' => Collective\Html\FormFacade::class,
            'Html' => Collective\Html\HtmlFacade::class,
+       Blade {{ }} statements are automatically sent through PHP's htmlentities function to prevent XSS attacks.
+	   If you don't want the data to be escaped then use {!! !!} else use {{ }}
+   16. Modify Status to set to Not Active by default
+   17. Populate the user role
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
 	https://devcenter.heroku.com/articles/getting-started-with-laravel
+    https://medium.com/@markustripp/getting-started-with-laravel-5-4-and-mongodb-1ad2892e473f
 */
 /*
 |--------------------------------------------------------------------------
