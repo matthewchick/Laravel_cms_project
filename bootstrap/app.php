@@ -1,7 +1,7 @@
 <?php
 
-/*
- *  1. configure database configuration inside .env
+/*  Finish Section 1 - 9, 11, 12, 22, 26, 27*, 39*
+ *  1. configure database configuration inside .env  Section 1, 2 and 3
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
  *     https://laravel.com/docs/5.2/routing - Section 4 (Route)  => route.php inside HTTP
@@ -34,6 +34,13 @@
        pass data to view, use {{$id}} in html <= return view('post'->with('id',$id); or return view('post', compact(id)); Section 6 View
        https://laravel.com/docs/5.2/blade
 	   @extends()
+       @yield()
+       @if..@endif, @while..@endwhile, @for..@endfor, @foreach..@endforeach
+       @include()
+
+    final: APP_ENV=local => production
+		   APP_DEBUG=true => false
+	https://devcenter.heroku.com/articles/getting-started-with-laravel
 */
 /*
 |--------------------------------------------------------------------------
