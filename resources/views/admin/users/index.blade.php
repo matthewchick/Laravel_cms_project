@@ -1,15 +1,18 @@
+{{--call admin layout--}}
 @extends('layouts.admin')
 
 @section('content')
-    <h1>User</h1>
+    <h1>Users</h1>
     <table class="table">
         <thead>
         <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Role</th>
             <th>Created</th>
             <th>Updated</th>
+            <th>Status</th>
         </tr>
         </thead>
         <tbody>
@@ -19,8 +22,10 @@
                     <td>{{$user->id}}</td>
                     <td>{{$user->name}}</td>
                     <td>{{$user->email}}</td>
+                    <td>{{$user->role->name}}</td>
                     <td>{{$user->created_at->diffForHumans()}}</td>
                     <td>{{$user->updated_at->diffForHumans()}}</td>
+                    <td>{!! $user->is_active == 1 ? '<input type="checkbox" checked> ' : '<input type="checkbox" >'!!}</td>
                 </tr>
             @endforeach
         @endif
