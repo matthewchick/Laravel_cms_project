@@ -46,7 +46,9 @@
        use destroy()
    15. Use and install laravel collective html => https://laravelcollective.com/docs/5.2/html
 	   composer require laravelcollective/html 5.2 => composer update
-
+	   Add Collective\Html\HtmlServiceProvider::class, inside config/app.php
+       Add 'Form' => Collective\Html\FormFacade::class,
+           'Html' => Collective\Html\HtmlFacade::class,
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
