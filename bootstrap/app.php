@@ -53,6 +53,7 @@
 	   If you don't want the data to be escaped then use {!! !!} else use {{ }}
    16. Modify Status to set to Not Active by default
    17. Populate the user role
+   18. Create UserRequest.php as a middleware by php artisan make:request UserRequest
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false

@@ -43,6 +43,17 @@ class AdminUsersController extends Controller
      */
     public function store(Request $request)
     {
+	    /* method 1
+    	$rules =
+		    [
+			    'name' => 'required',
+			    'email' => 'required',
+			    'role_id' => 'required',
+			    'is_active' => 'required',
+			    'password' => 'required'
+		    ];
+	    $this->validate($request, $rules);
+	    */
         return $request ->all();
     }
 
