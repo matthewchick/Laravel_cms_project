@@ -54,6 +54,8 @@
    16. Modify Status to set to Not Active by default
    17. Populate the user role
    18. Create UserRequest.php as a middleware by php artisan make:request UserRequest
+   19. Create an error message if not validated
+
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
