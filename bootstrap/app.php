@@ -55,7 +55,10 @@
    17. Populate the user role
    18. Create UserRequest.php as a middleware by php artisan make:request UserRequest
    19. Create an error message if not validated
-
+   20. Upload the file ->
+	   {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store','files'=>true ]) !!}
+       Add phpto_ID to users table => php artisan make:migration add_photo_id_to_users --table=users
+	   php artisan migrate
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
