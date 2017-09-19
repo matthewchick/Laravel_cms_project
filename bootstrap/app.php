@@ -62,7 +62,8 @@
        photo image - mass assignment => php artisan make:model Photo -m
    21. Create link by using {{route('admin.users')}}
    22. Display the image using accessor
-
+   23. Edit the user page
+	   {!! Form::model($user, ['method'=>'PATCH', 'action'=>'AdminUsersController@update','files'=>true ]) !!}
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false

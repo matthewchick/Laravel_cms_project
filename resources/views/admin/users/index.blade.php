@@ -22,7 +22,7 @@
                 <tr>
                     <td>{{$user->id}}</td>
                     <td><img height="50" src="{{$user->photo ? $user->photo->file: 'no user photo'}}" alt=""/></td>
-                    <td>{{$user->name}}</td>
+                    <td><a href="{{route('admin.users.edit', $user->id)}}">{{$user->name}}</a></td>
                     <td>{{$user->email}}</td>
                     <td>{{$user->role->name}}</td>
                     <td>{{$user->created_at->diffForHumans()}}</td>
