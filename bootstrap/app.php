@@ -1,6 +1,6 @@
 <?php
 
-/*  Finish Section 1 - 9, 11, 12, 18, 22, 26, 27*, 39*
+/*  Finish Section 1 - 9, 11, 12, 18, 21, 22, 26, 27*, 39*
  *  1. configure database configuration inside .env  Section 1, 2 and 3
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
@@ -55,10 +55,11 @@
    17. Populate the user role
    18. Create UserRequest.php as a middleware by php artisan make:request UserRequest
    19. Create an error message if not validated
-   20. Upload the file ->
+   20. Upload the file ->  (Section 21) => https://laravel.com/docs/5.2/requests#files
 	   {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store','files'=>true ]) !!}
        Add phpto_ID to users table => php artisan make:migration add_photo_id_to_users --table=users
 	   php artisan migrate
+       photo image - mass assignment
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
