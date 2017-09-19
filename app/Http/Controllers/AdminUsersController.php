@@ -72,7 +72,7 @@ class AdminUsersController extends Controller
 	    $this->validate($request, $rules);
 	    */
 	    //User::create($request ->all());
-	    //return redirect('/admin/users');  //redirect to /admin/users page
+	    return redirect('/admin/users');  //redirect to /admin/users page
         //return $request ->all();
     }
 
