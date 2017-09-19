@@ -10,4 +10,12 @@ class Photo extends Model
 		'file'
 	];
 
+	protected $uploads ='/images/';
+
+	//$photo represent the value of that column, File is the name of the column
+	public function getFileAttribute($photo){   //get accessor
+
+		return $this->uploads . $photo;
+
+	}
 }
