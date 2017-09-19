@@ -59,7 +59,7 @@
 	   {!! Form::open(['method'=>'POST', 'action'=>'AdminUsersController@store','files'=>true ]) !!}
        Add phpto_ID to users table => php artisan make:migration add_photo_id_to_users --table=users
 	   php artisan migrate
-       photo image - mass assignment
+       photo image - mass assignment => php artisan make:model Photo -m
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
