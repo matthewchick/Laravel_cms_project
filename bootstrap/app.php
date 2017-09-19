@@ -60,6 +60,7 @@
        Add phpto_ID to users table => php artisan make:migration add_photo_id_to_users --table=users
 	   php artisan migrate
        photo image - mass assignment => php artisan make:model Photo -m
+   21. Create link by using {{route('admin.users')}}
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
