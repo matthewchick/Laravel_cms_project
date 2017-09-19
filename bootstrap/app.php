@@ -1,6 +1,6 @@
 <?php
 
-/*  Finish Section 1 - 9, 11, 12, 18, 19, 21, 22, 26, 27*, 39*
+/*  Finish Section 1 - 9, 11, 12, 18 - 22, 26, 27*, 39*
  *  1. configure database configuration inside .env  Section 1, 2 and 3
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources
@@ -61,7 +61,8 @@
 	   php artisan migrate
        photo image - mass assignment => php artisan make:model Photo -m
    21. Create link by using {{route('admin.users')}}
-   22. Display the image using accessor
+   22. Display the image using accessor  (Section 20) Accessors and mutators
+	   https://laravel.com/docs/5.2/eloquent-mutators
    23. Edit the user page
 	   {!! Form::model($user, ['method'=>'PATCH', 'action'=>'AdminUsersController@update','files'=>true ]) !!}
 
