@@ -68,6 +68,8 @@
    24. Update the user page => php artisan make:request UsersEditRequest
    25. use middleware for security
 	   php artisan make:middleware Admin
+	   add 'admin' => \App\Http\Middleware\Admin::class, inside Http/Kernel.php
+       add Route::group (['middleware'=>'admin'], function (){} inside Http/routes.php
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false

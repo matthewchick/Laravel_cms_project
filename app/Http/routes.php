@@ -38,10 +38,10 @@ Route::get('/admin', function () {
 // https://laravel.com/docs/5.2/controllers
 
 Route::group (['middleware'=>'admin'], function () {
-
+	Route::resource('admin/users', 'AdminUsersController');
 });
 
-Route::resource('admin/users', 'AdminUsersController');
+
 
 /*
  * This route group applies the "web" middleware group to
