@@ -72,6 +72,8 @@
        add Route::group (['middleware'=>'admin'], function (){} inside Http/routes.php
    26. Delete the user and use session flash   Section 24 Session
 	   Delete the image from directory
+	   unlink(public_path() . $user->photo->file);
+   27. Add more security
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
