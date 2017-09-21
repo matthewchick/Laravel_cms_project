@@ -1,6 +1,6 @@
 <?php
 
-/*  Finish Section 1 - 9, 11, 12, 18 - 24, 26, 27*, 39*
+/*  Finish Section 1 - 9, 11, 12, 14, 18 - 24, 26, 27*, 39*
  *  1. configure database configuration inside .env  Section 1, 2 and 3
  *  2. php artisan migrate - create two tables - users and password
  *  3. php artisan make:auth - scaffold basic login and registration views and routes - install HomeController and a bundle views files under resources

@@ -10,7 +10,7 @@ class User extends Authenticatable {
 	 *
 	 * @var array
 	 */
-	protected $fillable = [
+	protected $fillable = [   //mass assignment to be consistent with DB
 		'name',
 		'email',
 		'password',
