@@ -66,10 +66,11 @@
    23. Edit the user page
 	   {!! Form::model($user, ['method'=>'PATCH', 'action'=>'AdminUsersController@update','files'=>true ]) !!}
    24. Update the user page => php artisan make:request UsersEditRequest
-   25. use middleware for security
+   25. use middleware for security    (section ) middleware
 	   php artisan make:middleware Admin
 	   add 'admin' => \App\Http\Middleware\Admin::class, inside Http/Kernel.php
        add Route::group (['middleware'=>'admin'], function (){} inside Http/routes.php
+   26. Delete the user and use session flash   Section 24 Session
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
