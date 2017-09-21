@@ -36,6 +36,11 @@ Route::get('/admin', function () {
 });
 // create a special route by using resource - php artisan list:route - list all resources routes
 // https://laravel.com/docs/5.2/controllers
+
+Route::group (['middleware'=>'admin'], function () {
+
+});
+
 Route::resource('admin/users', 'AdminUsersController');
 
 /*

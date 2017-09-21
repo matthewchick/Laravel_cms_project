@@ -66,7 +66,8 @@
    23. Edit the user page
 	   {!! Form::model($user, ['method'=>'PATCH', 'action'=>'AdminUsersController@update','files'=>true ]) !!}
    24. Update the user page => php artisan make:request UsersEditRequest
-
+   25. use middleware for security
+	   php artisan make:middleware Admin
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
