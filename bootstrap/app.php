@@ -65,7 +65,7 @@
 	   https://laravel.com/docs/5.2/eloquent-mutators
    23. Edit the user page
 	   {!! Form::model($user, ['method'=>'PATCH', 'action'=>'AdminUsersController@update','files'=>true ]) !!}
-
+   24.
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
 	https://devcenter.heroku.com/articles/getting-started-with-laravel
