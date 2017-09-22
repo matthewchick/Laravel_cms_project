@@ -76,6 +76,7 @@
    27. Add more security
    28. Create Post   => php artisan make:controller --resource AdminPostsController
        Create migration  => php artisan make:model Post -m   -Create model
+       Set up the relationship
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
