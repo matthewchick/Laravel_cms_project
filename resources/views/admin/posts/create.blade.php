@@ -32,6 +32,6 @@
 
         {!! Form::close() !!}
 
-
+        @include('errors.form_error')
 
 @endsection
