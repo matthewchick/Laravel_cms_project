@@ -78,6 +78,7 @@
        Create migration  => php artisan make:model Post -m   -Create model
        Set up the relationship
    29. Create category model
+   30. php artisan key:generate for APP_KEY
 
 
     final: APP_ENV=local => production
