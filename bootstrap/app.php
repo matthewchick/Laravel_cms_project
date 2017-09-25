@@ -79,7 +79,7 @@
        Set up the relationship
    29. Create category model
    30. php artisan key:generate for APP_KEY
-
+   31. Edit the Post
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
