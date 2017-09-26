@@ -80,7 +80,9 @@
    29. Create category model
    30. php artisan key:generate for APP_KEY
    31. Edit the Post
-   31. how to set foreign key
+   32. how to set foreign key
+
+   33. php artisan make:controller --resource AdminCategoriesController
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false
