@@ -1,14 +1,8 @@
 @extends('layouts.admin')
 
-
-
-
-
 @section('content')
 
-
     <h1>Categories</h1>
-
 
     <div class="col-sm-6">
 
@@ -32,24 +26,10 @@
         </div>
         {!! Form::close() !!}
 
-
-
     </div>
-
-
-
 
     <div class="col-sm-6">
 
-
-
-
-
-
     </div>
-
-
-
-
 
 @stop
