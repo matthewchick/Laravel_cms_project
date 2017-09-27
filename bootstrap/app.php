@@ -84,6 +84,8 @@
 
    33. php artisan make:controller --resource AdminCategoriesController
    34. use dropzone.js and css - add @yield('scripts') and @yield('styles')
+   35. php artisan make:model Comment -m
+       php artisan make:model CommenReply -m
 
     final: APP_ENV=local => production
 		   APP_DEBUG=true => false

@@ -42,7 +42,8 @@ Route::group (['middleware'=>'admin'], function () {
 	Route::resource('admin/posts', 'AdminPostsController');
 	Route::resource('admin/categories', 'AdminCategoriesController');
 	Route::resource('admin/media', 'AdminMediaController');
-
+	Route::resource('admin/comments', 'PostCommentsController');
+	Route::resource('admin/comments/replies', 'CommentRepliesController');
 	// Route::get('admin/media/upload', ['as'=>'admin.media.upload', 'uses'=>'AdminMediaController@store']);
 });
 
